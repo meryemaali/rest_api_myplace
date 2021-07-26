@@ -16,7 +16,7 @@ if(error.message) res.status(400).send(error.message);
   });
 
   user
-    .save()
+    .save()  
     .then((user) => {
       res.send(user);
     })
